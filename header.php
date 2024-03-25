@@ -29,19 +29,31 @@
 		<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/slick.css"/>
 		<!-- Add the slick-theme.css if you want default styling -->
 		<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/slick-theme.css"/>
-		<!-- Google Tag Manager -->
 
-		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    
+<!-- Google tag (gtag.js) added 25/3/2024 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KPKQMJM1LF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-KPKQMJM1LF');
+</script>
+
+		
+    <!-- Google Tag Manager -->
+		<!-- <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-		})(window,document,'script','dataLayer','GTM-TPTD2BH');</script>
+		})(window,document,'script','dataLayer','GTM-TPTD2BH');</script> -->
 		<!-- End Google Tag Manager -->
 	</head>
 	<body <?php body_class(); ?>>
 		<!-- Google Tag Manager (noscript) -->
-		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TPTD2BH"
-		height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+		<!-- <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TPTD2BH"
+		height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> -->
 		<!-- End Google Tag Manager (noscript) -->
 		<?php
   $socialChannels = get_field("social_channels", "option");
@@ -65,8 +77,8 @@
 						<div class="utilityHeader-contact">
 							Follow us on:
 							
-							<a href="<?= $linkedin ?>" target=""_blank rel="nofollow"><img src="/wp-content/uploads/2021/10/linkedin-3.png" alt="Linkedin Icon used for Linkedin"/></a>
-							<a href="<?= $twitter ?>" target=""_blank rel="nofollow"><img src="/wp-content/uploads/2021/10/twitter-3.png" alt="Twitter Icon used for Twitter"/></a>
+							<a href="<?= $linkedin ?>" target="_blank" rel="nofollow"><img src="/wp-content/uploads/2021/10/linkedin-3.png" alt="Linkedin Icon used for Linkedin"/></a>
+							<a href="<?= $twitter ?>" target="_blank" rel="nofollow"><img src="/wp-content/uploads/2021/10/twitter-3.png" alt="Twitter Icon used for Twitter"/></a>
 						</div>
 					</div>	
 				</div>
